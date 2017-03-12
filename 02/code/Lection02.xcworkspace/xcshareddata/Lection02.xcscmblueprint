@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9371D37F48914C9B93E1AD198076110345557EA3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9371D37F48914C9B93E1AD198076110345557EA3" : 9223372036854775807,
+    "9041AFD8F9F102C1AD65E71C49CDC6C0D96A4CFD" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "140B0D69-AB76-44EB-8B21-8CF0F2A5C5BF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9371D37F48914C9B93E1AD198076110345557EA3" : "lections\/",
+    "9041AFD8F9F102C1AD65E71C49CDC6C0D96A4CFD" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Lection02",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Lection02\/Lection02.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:egv\/ios_tech_park.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9041AFD8F9F102C1AD65E71C49CDC6C0D96A4CFD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:techparkios2017\/lections.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9371D37F48914C9B93E1AD198076110345557EA3"
+    }
+  ]
+}

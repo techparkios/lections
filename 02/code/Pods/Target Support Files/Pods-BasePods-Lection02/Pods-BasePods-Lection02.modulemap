@@ -1,0 +1,6 @@
+framework module Pods_BasePods_Lection02 {
+  umbrella header "Pods-BasePods-Lection02-umbrella.h"
+
+  export *
+  module * { export * }
+}
