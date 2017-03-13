@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func helloButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: segueName, sender: nil)
+        performSegue(withIdentifier: SegeuIdentifiers.segueName, sender: nil)
     }
 
     @IBAction func valueChanged(_ sender: Any) {
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
         }
         
         switch segueIdentifier {
-        case SegueIdentifiers.segueName:
+        case SegeuIdentifiers.segueName:
             guard let viewController = segue.destination as? HelloViewController else {
                 return
             }            

@@ -31,6 +31,10 @@
 		90CBA2D21E745ADB008D7B30 /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CBA2D11E745ADB008D7B30 /* Greeting.swift */; };
 		90CBA2D31E745ADB008D7B30 /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CBA2D11E745ADB008D7B30 /* Greeting.swift */; };
 		90CBA2D41E745ADB008D7B30 /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CBA2D11E745ADB008D7B30 /* Greeting.swift */; };
+		90E3A0C01E771EAA00800ADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907A89001E741DA70035450A /* LaunchScreen.storyboard */; };
+		90E3A0C11E771EAB00800ADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907A89001E741DA70035450A /* LaunchScreen.storyboard */; };
+		90E3A0C21E771EFE00800ADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907A88FB1E741DA60035450A /* Main.storyboard */; };
+		90E3A0C31E771F0000800ADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907A88FB1E741DA60035450A /* Main.storyboard */; };
 		BF2A68F1DB9BB0396EFFECA3 /* Pods_BasePods_Lection02.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F9E2C100BFB2F0DC6408E /* Pods_BasePods_Lection02.framework */; };
 /* End PBXBuildFile section */
 
@@ -321,8 +325,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E3A0C01E771EAA00800ADF /* LaunchScreen.storyboard in Resources */,
 				90CBA2CF1E745838008D7B30 /* XIBViewController.xib in Resources */,
 				90CBA2C21E744B78008D7B30 /* krovostok.jpg in Resources */,
+				90E3A0C21E771EFE00800ADF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,8 +336,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E3A0C11E771EAB00800ADF /* LaunchScreen.storyboard in Resources */,
 				90CBA2D01E745838008D7B30 /* XIBViewController.xib in Resources */,
 				90CBA2C31E744B78008D7B30 /* krovostok.jpg in Resources */,
+				90E3A0C31E771F0000800ADF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +651,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K48Z7DGP84;
 				INFOPLIST_FILE = Lection02/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mail.Lection02;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -657,6 +666,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K48Z7DGP84;
 				INFOPLIST_FILE = Lection02/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mail.Lection02;
 				PRODUCT_NAME = "$(TARGET_NAME)";
