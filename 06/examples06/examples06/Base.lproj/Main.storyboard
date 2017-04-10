@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IoM-5B-vDW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="J4O-Du-QmX">
+            <objects>
+                <navigationController id="IoM-5B-vDW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iTr-Tz-zUI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="m7l-rp-ZfK" kind="relationship" relationship="rootViewController" id="0dc-dU-qhd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTW-Rv-wpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="141"/>
+        </scene>
+        <!--Лекция 06-->
+        <scene sceneID="1K3-X1-s5u">
+            <objects>
+                <tableViewController id="m7l-rp-ZfK" customClass="MenuViewController" customModule="examples06" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="cbT-Ke-xhz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Abe-iF-eLg">
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Abe-iF-eLg" id="kMg-FF-s5s">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="m7l-rp-ZfK" id="prW-7H-vGJ"/>
+                            <outlet property="delegate" destination="m7l-rp-ZfK" id="Tie-dq-iHa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Лекция 06" id="wX6-C3-mHg"/>
+                    <connections>
+                        <segue destination="1Ef-V6-ArT" kind="show" identifier="WKDemoSegue" id="9PZ-zM-CdW"/>
+                        <segue destination="YSJ-0r-79v" kind="show" identifier="JSONDemoSegue" id="OeY-JQ-Rgq"/>
+                        <segue destination="OGd-53-7qM" kind="show" identifier="ImageDumbDemoSegue" id="q4Q-he-Dj7"/>
+                        <segue destination="OGd-53-7qM" kind="show" identifier="ImageLibDemoSegue" id="q0S-dc-4ks"/>
+                        <segue destination="OGd-53-7qM" kind="show" identifier="ImageSessionDemoSegue" id="r0V-8P-Htn"/>
+                        <segue destination="OGd-53-7qM" kind="show" identifier="ImageFixedDumbDemoSegue" id="29k-KO-J2n"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Zh-wE-0V6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="137"/>
+        </scene>
+        <!--Demo View Controller-->
+        <scene sceneID="Wc1-1U-8fc">
+            <objects>
+                <viewController id="1Ef-V6-ArT" customClass="WKDemoViewController" customModule="examples06" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gja-aH-zsP"/>
+                        <viewControllerLayoutGuide type="bottom" id="paT-w3-hDJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VdU-bf-CwU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Olc-lQ-ABZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="-349"/>
+        </scene>
+        <!--Image Demo View Controller-->
+        <scene sceneID="9oN-ez-CtN">
+            <objects>
+                <viewController id="OGd-53-7qM" customClass="ImageDemoViewController" customModule="examples06" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uk9-VJ-hT8"/>
+                        <viewControllerLayoutGuide type="bottom" id="vjx-Y0-vdF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gc5-bS-4iA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RVc-Y0-2AQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RVc-Y0-2AQ" firstAttribute="leading" secondItem="Gc5-bS-4iA" secondAttribute="leading" id="EZA-RQ-3dB"/>
+                            <constraint firstItem="RVc-Y0-2AQ" firstAttribute="top" secondItem="Gc5-bS-4iA" secondAttribute="top" id="Fde-lN-1sP"/>
+                            <constraint firstAttribute="trailing" secondItem="RVc-Y0-2AQ" secondAttribute="trailing" id="S5q-16-fEs"/>
+                            <constraint firstItem="vjx-Y0-vdF" firstAttribute="top" secondItem="RVc-Y0-2AQ" secondAttribute="bottom" id="gnu-G5-ydz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="RVc-Y0-2AQ" id="aZU-8j-yhl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4e1-xb-IP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="848.72563718140941"/>
+        </scene>
+        <!--Demo View Controller Table View Controller-->
+        <scene sceneID="jrv-9h-UHi">
+            <objects>
+                <tableViewController id="YSJ-0r-79v" customClass="JSONDemoViewControllerTableViewController" customModule="examples06" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mCo-XE-TDX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="YSJ-0r-79v" id="CH8-dL-rZW"/>
+                            <outlet property="delegate" destination="YSJ-0r-79v" id="NpP-QR-sEA"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yC9-94-4EK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="289"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="29k-KO-J2n"/>
+    </inferredMetricsTieBreakers>
+</document>
