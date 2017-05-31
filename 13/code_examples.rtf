@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1251\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red196\green26\blue22;\red28\green0\blue207;
+\red170\green13\blue145;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0;\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c11000\c0\c81000;
+\csgenericrgb\c66500\c5200\c56900;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18760\viewh13480\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Core Animation example\
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1 \cf2 \CocoaLigature0             CABasicAnimation *animation1 = [CABasicAnimation animationWithKeyPath:\cf3 @"cornerRadius"\cf2 ];\
+            animation1.fromValue = \cf4 @(\cf5 self\cf2 .buttonImageView.layer.cornerRadius\cf4 )\cf2 ;\
+            animation1.toValue = \cf4 @(\cf2 kDefaultStopImageCornerRadius\cf4 )\cf2 ;\
+            \cf5 self\cf2 .buttonImageView.layer.cornerRadius = kDefaultStopImageCornerRadius;\
+            \
+            CABasicAnimation *animation2 = [CABasicAnimation animationWithKeyPath:\cf3 @"bounds"\cf2 ];\
+            CGRect oldBounds = \cf5 self\cf2 .buttonImageView.layer.bounds;\
+            CGRect newBounds = oldBounds;\
+            newBounds.size = CGSizeMake(kDefaultStopImageSide, kDefaultStopImageSide);\
+            animation2.fromValue = [NSValue valueWithCGRect:oldBounds];\
+            animation2.toValue = [NSValue valueWithCGRect:newBounds];\
+            \
+            CAAnimationGroup *animationsGroup = [CAAnimationGroup animation];\
+            animationsGroup.duration = \cf4 0.25\cf2 ;\
+            animationsGroup.repeatCount = \cf4 1\cf2 ;\
+            animationsGroup.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];\
+            animationsGroup.animations = \cf4 @[\cf2 animation1, animation2\cf4 ]\cf2 ;\
+            [\cf5 self\cf2 .buttonImageView.layer addAnimation:animationsGroup forKey:\cf3 @"allMyAnimations"\cf2 ];\
+            \cf5 self\cf2 .imageWidthConstraint.constant = \cf5 self\cf2 .imageHeightConstraint.constant = kDefaultStopImageSide;\
+            \cf5 self\cf2 .buttonImageView.layer.cornerRadius = kDefaultStopImageCornerRadius;\
+            \
+            [\cf5 self\cf2 .circularView showValue:\cf4 0.f\cf2 ];\
+            \cf5 self\cf2 .progressValue = \cf4 0.f\cf2 ;\
+            \cf5 self\cf2 .timer = [NSTimer scheduledTimerWithTimeInterval:(_maxActiveTime > \cf4 0\cf2  ? _maxActiveTime : kDefaultTimeInterval) / kDefaultNumberOfIterations target:\cf5 self\cf2  selector:\cf5 @selector\cf2 (timerFired:) userInfo:\cf5 nil\cf2  repeats:\cf5 YES\cf2 ];\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \CocoaLigature1 \
+\
+Core Animation example\
+\
+\
+}
